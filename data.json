@@ -1,0 +1,258 @@
+{
+  "whatWeOffer": [
+    {
+      "id": 1,
+      "title": "Software Development",
+      "description": "We build custom software solutions that solve real-world problems. From mobile and web applications to complex systems, we use the latest technologies to ensure performance, scalability, and user satisfaction. Whether you're a startup or an enterprise, we can bring your vision to life through reliable code and thoughtful design.",
+      "imageURL": "/images/what_we_offer/software_development.png"
+    },
+    {
+      "id": 2,
+      "title": "AI Training and Development",
+      "description": "We help businesses make the most of technology. Our IT consulting services provide expert guidance on strategy, infrastructure, security, and system integration. Whether you're planning a digital transformation or need support optimizing your current tech stack, we tailor solutions to fit your goals and budget.",
+      "imageURL": "/images/what_we_offer/ai_development.png"
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Design and Branding",
+      "description": "We craft meaningful visual identities and user-centric designs that resonate with your audience. Our services include brand development, UI/UX design, and marketing assets that communicate your value clearly and memorably. Let us help you stand out and create a lasting impression.",
+      "imageURL": "/images/what_we_offer/design_and_branding.png"
+    },
+    {
+      "id": 4,
+      "title": "Project Management",
+      "description": "We provide practical training programs that empower teams and individuals to grow in the digital space. Whether it's coding, design, or using modern tools and platforms, our hands-on approach ensures your team stays competitive and confident in a fast-paced tech environment.",
+      "imageURL": "/images/what_we_offer/project_management.png"
+    }
+  ],
+
+  "PreviousCompaniesData": [
+    {
+      "id": 1,
+      "companyImageURL": "/images/companies/company_1.png"
+    },
+    {
+      "id": 2,
+      "companyImageURL": "/images/companies/company_2.png"
+    },
+    {
+      "id": 3,
+      "companyImageURL": "/images/companies/company_3.png"
+    },
+    {
+      "id": 4,
+      "companyImageURL": "/images/companies/company_4.png"
+    }
+
+  ],
+
+  "ourServicesData" : [
+  {
+    "id": 1,
+    "serviceImageURL": "/images/our_services/ai_service.png",
+    "serviceTitle": "AI Solution & Development",
+    "serviceDescription": "We build intelligent AI agents tailored to your workflows, and specialize in prompt training and validation to ensure high-performance language model interactions across real-world use cases."
+  },
+  {
+    "id": 2,
+    "serviceImageURL": "/images/our_services/mobile_service.png",
+    "serviceTitle": "Mobile App Development",
+    "serviceDescription": "Cross-platform mobile applications offering native-like performance, seamless experience, and beautiful design."
+  },
+  {
+    "id": 3,
+    "serviceImageURL": "/images/our_services/web_service.png",
+    "serviceTitle": "Web Development",
+    "serviceDescription": "Scalable and high-performing web applications built with modern frameworks tailored to your unique business needs."
+  },
+  
+  {
+    "id": 4,
+    "serviceImageURL": "/images/our_services/ux_service.png",
+    "serviceTitle": "Product Design",
+    "serviceDescription": "Human-centered designs that enhance usability, accessibility, and visual appeal across digital interfaces."
+  },
+  {
+    "id": 5,
+    "serviceImageURL": "/images/our_services/cloud_service.png",
+    "serviceTitle": "Cloud Infrastructure & DevOps",
+    "serviceDescription": "Robust CI/CD pipelines, cloud-native architectures, and automated deployments for fast and reliable delivery."
+  },
+  {
+    "id": 6,
+    "serviceImageURL": "/images/our_services/maintenance_service.png",
+    "serviceTitle": "Maintenance & Support",
+    "serviceDescription": "Continuous monitoring, performance tuning, and proactive issue resolution to ensure long-term stability and peace of mind."
+  }
+],
+"projectData": [
+    {
+      "name": "Web Development",
+      "projects": [
+        {
+          "title": "Akil",
+          "description": "A website that connects opportunity seekers with organization, we made for a opportunity providing platform for client and a seprate organization website for managing applicants, with realtime notification, messaging and AI assitance is reving anf grading applicants resume makeing the hiring process smoother.",
+          "imageURL": "/images/projects/akil.png"
+        },
+        {
+          "title": "ESSS-Learning",
+          "description": "A fully functional e-learning website built using Next.js and MongoDB with a focus on user experience. The website has tree seprate section ther first focusing on learners with a user-friendly interface for accessing courses, the second section is for instructors to manage their courses and content, and the third section is for administrators to oversee the entire platform.",
+          "imageURL": "/images/projects/esss_learning.png"
+        },
+        {
+          "title": "Rate Eat",
+          "description": "A platform for your ultimate guide for authentic dining experiences, honest reviews, and personalized recommendations, perfect for good dyning experience. We made for a food enthusiast, with a focus on user-generated content and community engagement.",
+          "imageURL": "/images/projects/rateeat/rateeat_dashboard.png"
+        },
+        {
+          "title": "Masar",
+          "description": "A buitiful landing page designed to capture and emobdy the organization, create with high quality design with animation. The landing page shows the escenns of the orgsanization and its mission, vision and values.",
+          "imageURL": "/images/projects/masar_landing_page.png"
+        }
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "projects": [
+        {
+          "title": "RateEat App",
+          "description": "A mobile with food review and rating, QA menu for and ultimate dining experiences and honest reviews, and personalized recommendations. We made for a food enthusiast, with a focus on user-generated content and community engagement..",
+          "imageURL": "/images/projects/rateeat/rateeat_mobile.png"
+        },
+        {
+          "title": "Skillbridge App",
+          "description": "An online acadamy with a platform for those interseted in upskilling thier skill throught online examinations and contests. The app uses generative AI to create exams for specific course that you are learnig and help you aces your exam.",
+          "imageURL": "/images/projects/skillbridge_mobile.png"
+        },
+        {
+          "title": "Rideshare App",
+          "description": "Rideshare is a car-pooling platform made for both IOS and Android devices. The platform has AI integrated for efficient path and route matching. It allows users to find and share rides with others, reducing travel costs and environmental impact.",
+          "imageURL": "/images/projects/rideshare.png"
+        },
+        {
+          "title": "Spark Tank",
+          "description": "Built for entruprnur and investors, a platform that connects them. The plaform makes it easy to connect investors with new startup. Built for both IOS and Anderoid platforms.",
+          "imageURL": "/images/projects/lian.png"
+        }
+      ]
+    },
+    {
+      "name": "Design & Branding",
+      "projects": [
+        {
+          "title": "LIAN",
+          "description": "Created branding and butiful UI/UX design for an agency. Creative website design made for a collective team offering software engineering services to clients while also creating opportunities for freelancers by organizing, managing, and delivering projects at scale. We built their website fully equipped to handle client information retrieval, with fully supported backend monetization and a bunch of other meaningless but professional sounding words.",
+          "imageURL": "/images/projects/lian.png"
+        },
+        {
+          "title": "RateEat",
+          "description": "Intutive UI design for software products. We specialize in creating user-friendly interfaces that enhance the overall user experience. Our design process focuses on understanding user needs and behaviors to create intuitive and engaging designs.",
+          "imageURL": "/images/projects/rateeat/rateeat_landing_page.png"
+        },
+        {
+          "title": "AKIL Connect",
+          "description": "Visuals and graphics for a social media marketing campaign, focusing on engagement and growth. Created Social media posts, Banners, Decorations for Events, Marketing Videos, and Branding.",
+          "imageURL": "/images/projects/akil_branding.png"
+        },
+        {
+          "title": "Dr.Kalkidan Dentistry",
+          "description": "For our clients we create website designs that meet their business needs and what their customers need. Intutive UI design for software products. We specialize in creating user-friendly interfaces that enhance the overall user experience. Our design process focuses on understanding user needs and behaviors to create intuitive and engaging designs.",
+          "imageURL": "/images/projects/dr.kalkidan_design.png"
+        }
+      ]
+    },
+    {
+      "name": "AI Solutions",
+      "projects": [
+        {
+          "title": "Prompt Engineering",
+          "description": "Testing and reviwing AI responses for your model, we provide reviwes on AI models and testing them in different area of expeerties that meets the goal of the AI. We also provide correct and accurate answers for the modesl response helping the tranning process.",
+          "imageURL": "/images/projects/lian.png"
+        },
+        {
+          "title": "Chatbot Development",
+          "description": "An AI-driven chatbot for customer support, integrated with NLP technology. The chatbot is designed to handle customer inquiries, provide information, and assist with common issues, improving response times and customer satisfaction.",
+          "imageURL": "/images/projects/finsight_assistant.png"
+        },
+        {
+          "title": "Image Recogniation",
+          "description": "An finetuned Image Recogniation Ai, for analyzing large datasets using machine learning algorithms for insights. Used in object detecting in machine for assembly and disassembly of components.",
+          "imageURL": "/images/projects/lian.png"
+        }
+      ]
+    }
+  ],
+
+  "testimonialData": [
+  {
+    "id"  : 1,
+    "testimonial": "This platform exceeded our expectations. The UI was intuitive and the team’s responsiveness made the entire process seamless.",
+    "clientImage": "/images/testimonials/client_1.png",
+    "clientName": "Amina Yusuf",
+    "clientTag": "Product Manager, NexaTech"
+  },
+  {
+    "id"  : 2,
+    "testimonial": "Great service and fantastic support!",
+    "clientImage": "/images/testimonials/client_2.png",
+    "clientName": "John Carter",
+    "clientTag": "CEO, GreenBit"
+  },
+  {
+    "id"  : 3,
+    "testimonial": "Reliable, efficient, and creative. We enjoyed working with them from start to finish.",
+    "clientImage": "/images/testimonials/client_2.png",
+    "clientName": "Samuel Lee",
+    "clientTag": "CTO, Finzo"
+  },
+  {
+    "id"  : 4,
+    "testimonial": "They truly understand user needs and tailor the design accordingly. The end result was a product that not only works well but looks great too. I would recommend them without hesitation to anyone looking for quality and professionalism.",
+    "clientImage": "/images/testimonials/client_1.png",
+    "clientName": "Linda Okafor",
+    "clientTag": "UX Lead, DesignHub"
+  },
+  {
+    "id"  : 5,
+    "testimonial": "They truly understand user needs and tailor the design accordingly. The end result was a product that not only works well but looks great too. I would recommend them without hesitation to anyone looking for quality and professionalism.",
+    "clientImage": "/images/testimonials/client_2.png",
+    "clientName": "Samuel Lee",
+    "clientTag": "CTO, Finzo"
+  },
+  {
+    "id"  : 6,
+    "testimonial": "Reliable, efficient, and creative. We enjoyed working with them from start to finish.",
+    "clientImage": "/images/testimonials/client_2.png",
+    "clientName": "Samuel Lee",
+    "clientTag": "CTO, Finzo"
+  },
+  {
+    "id"  : 7,
+    "testimonial": "They truly The end result was a product that not only works well but looks great too. I would recommend them without hesitation to anyone looking for quality and professionalism.",
+    "clientImage": "/images/testimonials/client_1.png",
+    "clientName": "Linda Okafor",
+    "clientTag": "UX Lead, DesignHub"
+  }
+
+
+
+],
+"techstackImages": [
+    { "id": 1, "src": "/images/tech/angular.png", "alt": "Angular" },
+    { "id": 2, "src": "/images/tech/word_press.png", "alt": "WordPress" },
+    { "id": 3, "src": "/images/tech/apache.png", "alt": "Apache" },
+    { "id": 4, "src": "/images/tech/docker.png", "alt": "Docker" },
+    { "id": 5, "src": "/images/tech/python.png", "alt": "Python" },
+    { "id": 6, "src": "/images/tech/php.png", "alt": "PHP" },
+    { "id": 7, "src": "/images/tech/react.png", "alt": "React" },
+    { "id": 8, "src": "/images/tech/javascript.png", "alt": "JavaScript" },
+    { "id": 9, "src": "/images/tech/flutter.png", "alt": "Flutter" },
+    { "id": 10, "src": "/images/tech/c_sharp.png", "alt": "C#" },
+    { "id": 11, "src": "/images/tech/vue.png", "alt": "Vue" },
+    { "id": 12, "src": "/images/tech/typescript.png", "alt": "TypeScript" },
+    { "id": 13, "src": "/images/tech/node.png", "alt": "Node.js" },
+    { "id": 14, "src": "/images/tech/sql.png", "alt": "MySQL" },
+    { "id": 15, "src": "/images/tech/aws.png", "alt": "AWS" }
+  ]
+
+}

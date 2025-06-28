@@ -1,26 +1,123 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes scroll-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.animate-scroll {
+    animation: scroll 20s linear infinite;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-scroll-reverse {
+    animation: scroll-reverse 20s linear infinite;
+}
+
+/* Utility for the scrolling container */
+.client-scroller {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    /* Duplicate content in JSX handles the loop */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 40s linear infinite;
+}
+
+.animate-marquee-reverse {
+    animation: marquee-reverse 40s linear infinite;
+}
+
+.animate-scroll-sm {
+    animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-md {
+    animation: scroll 30s linear infinite;
+}
+
+.animate-scroll-lg {
+    animation: scroll 20s linear infinite;
+}
+
+.animate-scroll-reverse-sm {
+    animation: scroll-reverse 40s linear infinite;
+}
+
+.animate-scroll-reverse-md {
+    animation: scroll-reverse 30s linear infinite;
+}
+
+.animate-scroll-reverse-lg {
+    animation: scroll-reverse 20s linear infinite;
+}
+
+
+@keyframes slideInRotate {
+    0% {
+        transform: translateX(-12px) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(0px) rotate(180deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
 }
