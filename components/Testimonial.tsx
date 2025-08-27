@@ -15,12 +15,12 @@ const TestimonialCard = ({
   clientTag,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white min-w-md w-full h-1/2 p-6 shadow-md flex flex-col items-start mb-4 space-y-6">
+    <div className="bg-white min-w-md w-full h-1/2 p-6 shadow-md flex flex-col items-start mb-8 space-y-6">
       {/* Testimonial text */}
-      <p className="text-sm">{testimonial}</p>
+      <p className="text-sm font-sans text-Secondary">{testimonial}</p>
 
       {/* Client Info */}
-      <div className="flex w-full items-center space-x-4 mt-6">
+      <div className="flex w-full items-center space-x-4 mt-12">
         <div className="relative w-12 h-12">
           <Image
             src={clientImage}
@@ -41,29 +41,14 @@ const TestimonialCard = ({
 const WhatOurClientSay = () => {
   const clientstestimonialData = [...testimonialData, ...testimonialData]; // Duplicate data for two rows
   return (
-    <section className="bg-[#000000] flex flex-col items-center my-32">
+    <section className="bg-[#000000] flex flex-col items-center mb-32">
       <h1 className="text-[#FFFF] text-2xl font-sans mt-12">
         What clients say about us
       </h1>
       <p className="text-[#FFFF] p-2 mb-8">Customer testimonial</p>
 
       {/* Testimonial Cards */}
-
-      <div className="overflow-hidden w-full">
-        <div className="animate-marquee inline-flex gap-8">
-          {clientstestimonialData.map((testimonial, index) => (
-            <TestimonialCard
-              key={`top-${index}`}
-              testimonial={testimonial.testimonial}
-              clientImage={testimonial.clientImage}
-              clientName={testimonial.clientName}
-              clientTag={testimonial.clientTag}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className="overflow-hidden w-full">
+      <div className="overflow-hidden w-full mb-12">
         <div className="animate-marquee inline-flex gap-8">
           {clientstestimonialData.map((testimonial, index) => (
             <TestimonialCard

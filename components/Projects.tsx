@@ -69,20 +69,33 @@ const ProjectsCard = () => {
             </li>
           ))}
         </ul>
+      </div>
 
+      {/* Right Column */}
+      <div className="w-full md:w-1/2 flex mr-12 flex-col h-[75vh] md:h-full">
         {/* Description at bottom right */}
-        <div className="mt-24 self-end text-right">
+        <div className="py-4 items-start">
           <h1 className="text-2xl font-secular">{currentProject?.title}</h1>
-          <p className="text-[#A8A8A8] text-sm max-w-sm">
+          <p className="text-[#A8A8A8] text-sm">
             {currentProject?.description}
           </p>
         </div>
-      </div>
 
-      {/* Pagination */}
-      <div className="w-full md:w-1/2 flex flex-col h-[75vh] md:h-full">
-        {/* Pagination Positioned on Top */}
-        <div className="flex justify-center items-center space-x-4 px-4 py-2 mb-4">
+        {/* Image with reserved space above */}
+        <div className="relative">
+          {currentProject && (
+            <Image
+              src={currentProject.imageURL}
+              alt="Project Image"
+              width={1200}
+              height={50}
+              className="rounded-2xl border-gray-300 border-2"
+            />
+          )}
+        </div>
+
+        {/* Pagination Positioned */}
+        <div className="flex justify-center items-center space-x-4 px-4 py-2 mb-4 mt-4">
           <button
             onClick={handlePrev}
             className="flex items-center gap-2 text-white bg-[#292E3D] p-2 hover:text-gray-300 transition-transform duration-200 hover:-translate-x-1"
@@ -110,19 +123,6 @@ const ProjectsCard = () => {
             Next <FaArrowRight />
           </button>
         </div>
-
-        {/* Image with reserved space above */}
-        <div className="relative">
-          {currentProject && (
-            <Image
-              src={currentProject.imageURL}
-              alt="Project Image"
-              width={1200}
-              height={50}
-              className="rounded-2xl border-gray-300 border-2"
-            />
-          )}
-        </div>
       </div>
     </div>
   );
@@ -130,7 +130,7 @@ const ProjectsCard = () => {
 
 const Projects = () => {
   return (
-    <section className="space-y-4 mt-24 mx-6">
+    <section className="space-y-4 mx-6">
       <div className="flex flex-col p-4 items-start">
         <h1 className="text-4xl font-secular mt-16">Our Previous Projects</h1>
         <p className="text-[#A8A8A8]">

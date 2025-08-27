@@ -30,7 +30,7 @@ const ServiceCard = ({
 const OurService = () => {
   return (
     <section className="flex flex-col bg-[#000000] bg-[url('/icons/services.png')] bg-cover bg-center w-full items-center mt-4 mx-auto mb-12">
-      <h1 className="font-Sans text-4xl text-[#FFFF] font-bold m-24">
+      <h1 className="font-Sans text-4xl text-[#FFFF] font-bold m-6 md:m-24">
         Our Services
       </h1>
 

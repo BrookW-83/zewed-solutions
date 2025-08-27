@@ -15,16 +15,16 @@ const Footer = () => {
 
       {/* Navigation Links */}
       <nav className="mb-6 flex justify-center mx-4 gap-2 text-md space-x-4">
-        <Link href="#home" className="hover:underline border-b-2">
+        <Link href="#home" className="hover:text-gray-500 border-b-2">
           Home
         </Link>
-        <Link href="#what-we-offer" className="hover:underline border-b-2">
+        <Link href="#what-we-offer" className="hover:text-gray-500 border-b-2">
           What We Offer
         </Link>
-        <Link href="#services" className="hover:underline border-b-2">
+        <Link href="#services" className="hover:text-gray-500 border-b-2">
           Services
         </Link>
-        <Link href="#projects" className="hover:underline border-b-2">
+        <Link href="#projects" className="hover:text-gray-500 border-b-2">
           Projects
         </Link>
       </nav>
@@ -67,7 +67,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <p className="text-sm text-gray-500">© 2025 All rights reserved.</p>
+      <p className="text-sm text-gray-500">© Zewd Solutions  2025 All rights reserved.</p>
     </footer>
   );
 };
