@@ -16,31 +16,31 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="what-we-offer">
+      <section id="what-we-offer" data-theme="light">
         <WhatWeOffer />
       </section>
 
-      <section id="previous-companies">
+      <section id="previous-companies" data-theme="dark">
         <PreviousCompanies />
       </section>
 
-      <section id="tech-stack">
+      <section id="tech-stack" data-theme="light">
         <LanguagesWeSpeak />
       </section>
 
-      <section id="services">
+      <section id="services" data-theme="dark">
         <OurService />
       </section>
 
-      <section id="projects">
+      <section id="projects" data-theme="light">
         <Projects />
       </section>
 
-      <section id="testimonials">
+      <section id="testimonials" data-theme="dark">
         <WhatOurClientSay />
       </section>
 
-      <section id="contact">
+      <section id="contact" data-theme="light">
         <ContactCard />
       </section>
     </main>
