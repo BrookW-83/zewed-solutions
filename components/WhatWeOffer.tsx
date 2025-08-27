@@ -92,7 +92,7 @@ const WhatWeOffer = () => {
 
         <div className="absolute bottom-0 right-0 z-0">
           <Image
-            src="/icons/decoration_1.png"
+            src="/icons/decoration.svg"
             alt="Bottom Right Decoration"
             width={200}
             height={200}
