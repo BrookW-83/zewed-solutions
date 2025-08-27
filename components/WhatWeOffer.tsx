@@ -68,13 +68,13 @@ const OffersCard = ({
 
 const WhatWeOffer = () => {
   return (
-    <section className="relative w-full max-w-7xl mx-auto px-4 overflow-hidden">
+    <section className="relative w-full mx-auto px-4 overflow-hidden">
       {/* Decorations stuck to screen edge */}
-      {/* <div className="absolute top-0 right-0 z-0">
+      <div className="absolute top-0 left-0 z-0">
           <Image
-            src="/icons/decoration_1.png"
+            src="/icons/decoration.svg"
             alt="Top Right Decoration"
-            width={200}
+            width={400}
             height={200}
             className="object-contain"
           />
@@ -98,7 +98,7 @@ const WhatWeOffer = () => {
             height={200}
             className="object-contain"
           />
-        </div> */}
+        </div>
 
       <h1 className="font-bold font-secular text-4xl mb-16 text-center mt-24 relative z-10">
         What We Offer

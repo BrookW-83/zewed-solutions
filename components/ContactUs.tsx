@@ -1,8 +1,30 @@
 "use client";
+import Image from "next/image";
 
 const ContactCard = () => {
   return (
-    <div className="flex flex-col max-w-3xl mt-24 mb-8 md:mx-auto border-2 border-black p-8 rounded-2xl shadow-md">
+    <section className="relative w-full">
+      <div className="absolute top-0 right-0 z-0">
+          <Image
+            src="/icons/contact_us_decoration.svg"
+            alt="Top Right Decoration"
+            width={200}
+            height={200}
+            className="object-contain"
+          />
+        </div>
+
+        <div className="absolute bottom-0 left-0 z-0">
+          <Image
+            src="/icons/contact_us_decoration_2.svg"
+            alt="Bottom Left Decoration"
+            width={400}
+            height={200}
+            className="object-contain"
+          />
+        </div>
+
+    <div className="flex flex-col max-w-3xl mt-24 mb-8 md:mx-auto border-2 border-black p-8 m-4 rounded-2xl shadow-md">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800">Contact Us</h2>
         <p className="text-gray-600 mt-2">
@@ -42,6 +64,7 @@ const ContactCard = () => {
         </div>
       </form>
     </div>
+    </section>
   );
 };
 
