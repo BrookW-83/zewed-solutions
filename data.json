@@ -200,8 +200,8 @@
   },
   {
     "id"  : 3,
-    "testimonial": "Reliable, efficient, and creative. We enjoyed working with them from start to finish.",
-    "clientImage": "/images/testimonials/client_2.png",
+    "testimonial": "Reliable, efficient, and creative. We enjoyed working with them from start to finish.The UI was intuitive and the team’s responsiveness made the entire process seamless.",
+    "clientImage": "/images/testimonials/client_1.png",
     "clientName": "Samuel Lee",
     "clientTag": "CTO, Finzo"
   },
@@ -214,8 +214,8 @@
   },
   {
     "id"  : 5,
-    "testimonial": "They truly understand user needs and tailor the design accordingly. The end result was a product that not only works well but looks great too. I would recommend them without hesitation to anyone looking for quality and professionalism.",
-    "clientImage": "/images/testimonials/client_2.png",
+    "testimonial": "They truly understand user needs and tailor the design accordingly. Great service and fantastic support!",
+    "clientImage": "/images/testimonials/client_1.png",
     "clientName": "Samuel Lee",
     "clientTag": "CTO, Finzo"
   },
@@ -238,21 +238,21 @@
 
 ],
 "techstackImages": [
-    { "id": 1, "src": "/images/tech/angular.png", "alt": "Angular" },
-    { "id": 2, "src": "/images/tech/word_press.png", "alt": "WordPress" },
+    { "id": 1, "src": "/images/tech/angular.svg", "alt": "Angular" },
+    { "id": 2, "src": "/images/tech/word_press.svg", "alt": "WordPress" },
     { "id": 3, "src": "/images/tech/apache.png", "alt": "Apache" },
     { "id": 4, "src": "/images/tech/docker.png", "alt": "Docker" },
-    { "id": 5, "src": "/images/tech/python.png", "alt": "Python" },
+    { "id": 5, "src": "/images/tech/python.svg", "alt": "Python" },
     { "id": 6, "src": "/images/tech/php.png", "alt": "PHP" },
-    { "id": 7, "src": "/images/tech/react.png", "alt": "React" },
-    { "id": 8, "src": "/images/tech/javascript.png", "alt": "JavaScript" },
-    { "id": 9, "src": "/images/tech/flutter.png", "alt": "Flutter" },
-    { "id": 10, "src": "/images/tech/c_sharp.png", "alt": "C#" },
-    { "id": 11, "src": "/images/tech/vue.png", "alt": "Vue" },
-    { "id": 12, "src": "/images/tech/typescript.png", "alt": "TypeScript" },
+    { "id": 7, "src": "/images/tech/react.svg", "alt": "React" },
+    { "id": 8, "src": "/images/tech/javascript.svg", "alt": "JavaScript" },
+    { "id": 9, "src": "/images/tech/flutter.svg", "alt": "Flutter" },
+    { "id": 10, "src": "/images/tech/c_sharp.svg", "alt": "C#" },
+    { "id": 11, "src": "/images/tech/vue.svg", "alt": "Vue" },
+    { "id": 12, "src": "/images/tech/typescript.svg", "alt": "TypeScript" },
     { "id": 13, "src": "/images/tech/node.png", "alt": "Node.js" },
     { "id": 14, "src": "/images/tech/sql.png", "alt": "MySQL" },
-    { "id": 15, "src": "/images/tech/aws.png", "alt": "AWS" }
+    { "id": 15, "src": "/images/tech/aws.svg", "alt": "AWS" }
   ]
 
 }
