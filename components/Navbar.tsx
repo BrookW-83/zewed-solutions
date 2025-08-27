@@ -16,65 +16,80 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(false);
-  const [currentScrollPosition, setCurrentScrollPosition] = useState(
-    navLinks[0].href
-  );
+  const [activeSection, setActiveSection] = useState("home");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
-    const sections = navLinks.map((link) => document.querySelector(link.href));
+  const sections = document.querySelectorAll("section");
 
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY > 10);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries.filter((e) => e.isIntersecting);
 
-      let current = navLinks[0].href;
-      sections.forEach((section, idx) => {
-        if (!section) return;
-        const top = section.getBoundingClientRect().top;
-        if (top <= 80) {
-          current = navLinks[idx].href;
-        }
-      });
-      setCurrentScrollPosition(current);
-    };
+      if (visible.length > 0) {
+        const topSection = visible.sort(
+          (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
+        )[0].target as HTMLElement;
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
+        const sectionTheme = topSection.getAttribute("data-theme") || "dark";
+        setTheme(sectionTheme as "light" | "dark");
+        setActiveSection(topSection.id || "home");
+      }
+    },
+    {
+      threshold: 0.3,
+    }
+  );
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  sections.forEach((section) => observer.observe(section));
+
+  return () => observer.disconnect();
+}, []);
+
 
   return (
     <header
       className={`fixed top-0 left-0 w-screen z-50 transition-colors duration-300 px-4 ${
-        scrollPosition ? "bg-black" : ""
-      } `}
+        theme === "light" ? "bg-white text-black" : "bg-black text-white"
+      }`}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-        <div className="flex gap-4 text-2xl font-bold font-secular text-white">
-          <Image src="/images/logo.png" className="border-white border-2 rounded-lg" alt="logo" width={50} height={50} />
-          Zewd Solutions
+        {/* Logo */}
+        <div className="flex items-center gap-2 text-2xl font-bold font-secular">
+          <Image
+            src="/images/logo.png"
+            className={`border-2 rounded-lg ${
+              theme === "light" ? "border-black" : "border-white"
+            }`}
+            alt="logo"
+            width={40}
+            height={40}
+          />
+          <h1 className="text-base md:text-lg">Zewd Solutions</h1>
         </div>
 
-        <div className="hidden md:flex gap-6 text-white">
+        {/* Desktop Menu */}
+        <div className="hidden md:flex gap-6">
           {navLinks.map(({ label, href }) => (
             <a
               key={href}
               href={href}
               className={`${
                 label === "Contact Us"
-                  ? "group bg-white text-black px-4 rounded-full hover:bg-gray-200 transition-colors duration-200 flex items-center gap-2"
-                  : `hover:text-gray-300 transition-colors duration-200 ${
-                      currentScrollPosition === href
-                        ? "border-white border-b-2"
-                        : ""
-                    } py-2`
-              }`}
+                  ? `group px-4 rounded-full flex items-center gap-2 transition-colors duration-200 ${
+                      theme === "light"
+                        ? "bg-black text-white hover:bg-gray-800"
+                        : "bg-white text-black hover:bg-gray-200"
+                    }`
+                  : `py-2 hover:opacity-70 transition-colors duration-200`
+              }  ${
+        activeSection === href.substring(1) ? "border-b-2 border-current" : "border-transparent"
+      }`}
             >
               {label === "Contact Us" ? (
-                <span className="flex items-center gap-2 p-2">
-                  {label}{" "}
-                  <FaLongArrowAltRight className="transform opacity-0 -translate-x-2 group-hover:translate-x-0 group-hover:rotate-360 group-hover:opacity-100 transition duration-500 ease-out" />
+                <span className="flex items-center text-sm w-full gap-2 p-2">
+                  {label}
+                  <FaLongArrowAltRight className="transform opacity-0 -translate-x-2 group-hover:translate-x-0 group-hover:opacity-100 transition duration-500 ease-out" />
                 </span>
               ) : (
                 label
@@ -83,8 +98,9 @@ const Navbar = () => {
           ))}
         </div>
 
+        {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white text-2xl"
+          className="md:hidden text-2xl"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
         >
@@ -94,13 +110,17 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black bg-opacity-90 px-6 pt-4 pb-6 space-y-4 text-white text-center">
+        <div
+          className={`md:hidden px-6 pt-4 pb-6 space-y-4 text-center ${
+            theme === "light" ? "bg-white text-black" : "bg-black text-white"
+          }`}
+        >
           {navLinks.map(({ label, href }) => (
             <a
               key={href}
               href={href}
               onClick={() => setIsOpen(false)}
-              className="block text-lg hover:text-gray-300 transition-colors duration-200"
+              className="block text-lg hover:opacity-70 transition-colors duration-200"
             >
               {label}
             </a>
