@@ -1,14 +1,15 @@
-import Image from "next/image";
+
 
 const Hero = () => {
   return (
-    <div className="relative w-screen h-[90vh] overflow-hidden flex items-center justify-center">
-      <Image
-        src="/images/hero/bg_hero.png"
-        alt="Hero Background"
-        fill
-        className="object-cover object-center"
-        priority
+    <div className="relative w-screen h-[95vh] overflow-hidden flex items-center justify-center">
+      <video
+        src="/images/hero/hero_bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover object-center" 
       />
 
       <div className="relative z-10 text-white w-full md:w-1/2 lg:w-1/3 max-w-4xl text-center px-4 sm:px-6 lg:px-8">
