@@ -3,8 +3,8 @@ import { PreviousCompaniesData } from "../data.json";
 
 const PreviousCompanies = () => {
   return (
-    <section className="flex flex-col items-center bg-[url('/images/companies/company_cover.png')] bg-cover bg-center bg-no-repeat h-[70vh]">
-      <h1 className="text-[#FFFFFF] font-secular text-md md:text-2xl text-center mt-2 mb-4 md:m-24 mx-auto md:max-w-80">
+    <section className="flex flex-col items-center bg-[url('/images/companies/company_cover.png')] bg-cover bg-center bg-no-repeat h-[70vh] 2xl:h-[60vh]">
+      <h1 className="text-[#FFFFFF] font-secular text-xl md:text-2xl text-center mt-4 mb-4 md:m-16 mx-auto md:max-w-80">
         Our consultants have worked on products for
       </h1>
       <div className="flex flex-col p-4 md:px-4 md:py-2 md:flex-row items-center justify-center gap-8 mx-auto">
