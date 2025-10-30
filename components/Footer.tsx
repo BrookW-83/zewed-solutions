@@ -33,11 +33,11 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-1 mb-4">
         <div className="flex items-center gap-2">
           <MdEmail />
-          <span>zewdsolutions@gmail.com</span>
+          <span>berekettadessekuche75@gmail.com</span>
         </div>
         <div className="flex items-center gap-2">
           <MdPhone />
-          <span>+123 456 7890</span>
+          <span>+251 901089079</span>
         </div>
       </div>
 

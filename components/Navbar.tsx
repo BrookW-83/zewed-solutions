@@ -33,11 +33,12 @@ const Navbar = () => {
 
         const sectionTheme = topSection.getAttribute("data-theme") || "dark";
         setTheme(sectionTheme as "light" | "dark");
-        setActiveSection(topSection.id || "home");
+        setActiveSection(topSection.id);
+        console.log('team changed to', sectionTheme, 'for', topSection.id);
       }
     },
     {
-      threshold: 0.3,
+      threshold: 0.8,
     }
   );
 

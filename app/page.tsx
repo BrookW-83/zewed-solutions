@@ -12,7 +12,7 @@ import WhatWeOffer from "@/components/WhatWeOffer";
 export default function Home() {
   return (
     <main className="w-screen scroll-smooth">
-      <section id="home">
+      <section id="home" data-theme="dark">
         <Hero />
       </section>
 

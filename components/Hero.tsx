@@ -1,14 +1,15 @@
-
+'use client';
 
 const Hero = () => {
   return (
-    <div className="relative w-screen h-[95vh] overflow-hidden flex items-center justify-center">
+    <div className="relative w-screen h-[100vh] overflow-hidden flex items-center justify-center">
       <video
         src="/images/hero/hero_bg.mp4"
         autoPlay
         loop
         muted
         playsInline
+        preload="metadata"
         className="absolute inset-0 w-full h-full object-cover object-center" 
       />
 
@@ -22,10 +23,14 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
-          <button className="bg-white text-black text-sm md:text-base px-4 md:px-6 py-2 rounded-full hover:bg-gray-800 hover:text-white transition">
+          <button 
+           onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+          className="bg-white text-black text-sm md:text-base px-4 md:px-6 py-2 rounded-full hover:bg-gray-800 hover:text-white transition">
             Our Services
           </button>
-          <button className="border-2 border-white text-white text-sm md:text-base px-4 md:px-6 py-2 rounded-full hover:bg-gray-800 transition">
+          <button
+           onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+           className="border-2 border-white text-white text-sm md:text-base px-4 md:px-6 py-2 rounded-full hover:bg-gray-800 transition">
             Contact Us
           </button>
         </div>
