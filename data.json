@@ -132,7 +132,7 @@
         {
           "title": "Spark Tank",
           "description": "Built for entruprnur and investors, a platform that connects them. The plaform makes it easy to connect investors with new startup. Built for both IOS and Anderoid platforms.",
-          "imageURL": "/images/projects/lian.png"
+          "imageURL": "/images/projects/spark_tank.png"
         }
       ]
     },
@@ -165,11 +165,6 @@
       "name": "AI Solutions",
       "projects": [
         {
-          "title": "Prompt Engineering",
-          "description": "Testing and reviwing AI responses for your model, we provide reviwes on AI models and testing them in different area of expeerties that meets the goal of the AI. We also provide correct and accurate answers for the modesl response helping the tranning process.",
-          "imageURL": "/images/projects/lian.png"
-        },
-        {
           "title": "Chatbot Development",
           "description": "An AI-driven chatbot for customer support, integrated with NLP technology. The chatbot is designed to handle customer inquiries, provide information, and assist with common issues, improving response times and customer satisfaction.",
           "imageURL": "/images/projects/finsight_assistant.png"
@@ -183,60 +178,38 @@
     }
   ],
 
-  "testimonialData": [
-  {
-    "id"  : 1,
-    "testimonial": "This platform exceeded our expectations. The UI was intuitive and the team’s responsiveness made the entire process seamless.",
-    "clientImage": "/images/testimonials/client_1.png",
-    "clientName": "Amina Yusuf",
-    "clientTag": "Product Manager, NexaTech"
-  },
-  {
-    "id"  : 2,
-    "testimonial": "Great service and fantastic support!",
-    "clientImage": "/images/testimonials/client_2.png",
-    "clientName": "John Carter",
-    "clientTag": "CEO, GreenBit"
-  },
-  {
-    "id"  : 3,
-    "testimonial": "Reliable, efficient, and creative. We enjoyed working with them from start to finish.The UI was intuitive and the team’s responsiveness made the entire process seamless.",
-    "clientImage": "/images/testimonials/client_1.png",
-    "clientName": "Samuel Lee",
-    "clientTag": "CTO, Finzo"
-  },
-  {
-    "id"  : 4,
-    "testimonial": "They truly understand user needs and tailor the design accordingly. The end result was a product that not only works well but looks great too. I would recommend them without hesitation to anyone looking for quality and professionalism.",
-    "clientImage": "/images/testimonials/client_1.png",
-    "clientName": "Linda Okafor",
-    "clientTag": "UX Lead, DesignHub"
-  },
-  {
-    "id"  : 5,
-    "testimonial": "They truly understand user needs and tailor the design accordingly. Great service and fantastic support!",
-    "clientImage": "/images/testimonials/client_1.png",
-    "clientName": "Samuel Lee",
-    "clientTag": "CTO, Finzo"
-  },
-  {
-    "id"  : 6,
-    "testimonial": "Reliable, efficient, and creative. We enjoyed working with them from start to finish.",
-    "clientImage": "/images/testimonials/client_2.png",
-    "clientName": "Samuel Lee",
-    "clientTag": "CTO, Finzo"
-  },
-  {
-    "id"  : 7,
-    "testimonial": "They truly The end result was a product that not only works well but looks great too. I would recommend them without hesitation to anyone looking for quality and professionalism.",
-    "clientImage": "/images/testimonials/client_1.png",
-    "clientName": "Linda Okafor",
-    "clientTag": "UX Lead, DesignHub"
-  }
-
-
-
+"testimonialData": [
+    {
+      "id": 1,
+      "testimonial": "I have never worked with a more dedicated and professional team. During our collaboration at the Ethiopian Space Science Society, they took the time to understand our goals and delivered a solution that far exceeded expectations. Their attention to detail, clear communication, and commitment to quality were truly exceptional. I highly recommend their services to anyone seeking reliable and innovative software development.",
+      "clientImage": "/images/testimonials/Kirubel.png",
+      "clientName": "Kirubel Menberu",
+      "clientTag": "Managing Director, ESSS"
+    },
+    {
+      "id": 2,
+      "testimonial": "The team made remarkable contributions to the development of the ESSS Learning Platform. From planning to execution, their service was exceptional — consistently delivering high-quality work that aligned perfectly with our needs. Their professionalism, technical expertise, and dedication to customer satisfaction are second to none. We look forward to continuing our partnership on future projects.",
+      "clientImage": "/images/testimonials/Lealem.png",
+      "clientName": "Lealem Kinfe",
+      "clientTag": "Program Manager, ESSS"
+    },
+    {
+      "id": 3,
+      "testimonial": "They provided excellent branding and social media services that truly elevated our online presence. Their creative approach and strategic insights helped our team boost engagement and reach new audiences effectively.",
+      "clientImage": "/images/testimonials/Josh.jpg",
+      "clientName": "Joshua Tadesse",
+      "clientTag": "Development Lead, ElderStudio"
+    },
+    {
+      "id": 4,
+      "testimonial": "Their expertise in AI development enabled us to build a chatbot that has transformed our customer support experience. The team was highly responsive, knowledgeable, and collaborative throughout the entire process. Working with them was both seamless and rewarding.",
+      "clientImage": "/images/testimonials/Samuel.jpeg",
+      "clientName": "Samuel",
+      "clientTag": "Managing Director, Yuba"
+    }
 ],
+
+
 "techstackImages": [
     { "id": 1, "src": "/images/tech/angular.svg", "alt": "Angular" },
     { "id": 2, "src": "/images/tech/word_press.svg", "alt": "WordPress" },
